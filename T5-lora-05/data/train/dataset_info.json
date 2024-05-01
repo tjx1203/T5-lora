@@ -1,0 +1,75 @@
+{
+  "builder_name": "parquet",
+  "citation": "\n@article{gliwa2019samsum,\n  title={SAMSum Corpus: A Human-annotated Dialogue Dataset for Abstractive Summarization},\n  author={Gliwa, Bogdan and Mochol, Iwona and Biesek, Maciej and Wawer, Aleksander},\n  journal={arXiv preprint arXiv:1911.12237},\n  year={2019}\n}\n",
+  "config_name": "samsum",
+  "dataset_name": "samsum",
+  "dataset_size": 10530016,
+  "description": "\nSAMSum Corpus contains over 16k chat dialogues with manually annotated\nsummaries.\nThere are two features:\n  - dialogue: text of dialogue.\n  - summary: human written summary of the dialogue.\n  - id: id of a example.\n",
+  "download_checksums": {
+    "hf://datasets/samsum@2e98021d4b3fbb8aedfcb699e757f4a5feb39808/samsum/train/0000.parquet": {
+      "num_bytes": 6055313,
+      "checksum": null
+    },
+    "hf://datasets/samsum@2e98021d4b3fbb8aedfcb699e757f4a5feb39808/samsum/test/0000.parquet": {
+      "num_bytes": 347351,
+      "checksum": null
+    },
+    "hf://datasets/samsum@2e98021d4b3fbb8aedfcb699e757f4a5feb39808/samsum/validation/0000.parquet": {
+      "num_bytes": 334534,
+      "checksum": null
+    }
+  },
+  "download_size": 6737198,
+  "features": {
+    "input_ids": {
+      "feature": {
+        "dtype": "int32",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "attention_mask": {
+      "feature": {
+        "dtype": "int8",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "labels": {
+      "feature": {
+        "dtype": "int64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "https://arxiv.org/abs/1911.12237",
+  "license": "CC BY-NC-ND 4.0",
+  "size_in_bytes": 17267214,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 9479117,
+      "num_examples": 14732,
+      "dataset_name": "samsum"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 534480,
+      "num_examples": 819,
+      "dataset_name": "samsum"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 516419,
+      "num_examples": 818,
+      "dataset_name": "samsum"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

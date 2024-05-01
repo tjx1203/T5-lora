@@ -1,0 +1,7 @@
+pip install bitsandbytes==0.37.1  ==> Successfully installed bitsandbytes-0.43.1
+
+pip install rouge-score
+pip install py7zr
+
+要求：transformers==4.27.1
+我的：transformers==4.26.1
